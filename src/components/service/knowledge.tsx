@@ -1,7 +1,7 @@
 import '/src/style/service/knowledge.scss'
 
-export default function Knowledge(props){
-    const interests = props.data.map((interes) => {
+export default function Knowledge(props: any){
+    const interests = props.data.map((interes: any) => {
         return (
             <div className='knowledge-element'>
                 <h3>{interes.title}</h3>

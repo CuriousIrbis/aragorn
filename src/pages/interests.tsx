@@ -8,7 +8,7 @@ interface Interes{
     description: string
 }
 
-async function getInterests(): Promise<Interes[] | Error>{
+async function getInterests(){
     try{
         const interests = await axios.get('/src/assets/text-data/favorites.json')
         return interests.data;
@@ -25,7 +25,7 @@ export default function Interests(){
     const [interests, setinterests] = useState(Array<Interes | Error>)
 
     useEffect(() => {
-        getInterests().then(value => setinterests(value))
+        getInterests().then((value: Array<Interes | Error>) => setinterests(value))
     })
 
     return (
