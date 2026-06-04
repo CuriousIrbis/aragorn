@@ -1,0 +1,12 @@
+.knowledge-section{
+    color: whitesmoke;
+
+    .knwowledge-list{
+
+        .knowledge-element{
+            &:nth-child(odd){
+                color: red;
+            }
+        }
+    }
+}
