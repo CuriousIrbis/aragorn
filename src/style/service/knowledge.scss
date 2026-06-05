@@ -1,12 +1,27 @@
-.knowledge-section{
-    color: whitesmoke;
+.knowledge-list{
+    display: flex;
+    flex-flow: row wrap;
 
-    .knwowledge-list{
+    gap: 50px;
+    
+    color: white;
 
-        .knowledge-element{
-            &:nth-child(odd){
-                color: red;
-            }
+    background-color: rgba($color: gray, $alpha: .2);
+    backdrop-filter: blur(2px);
+
+    .knowledge-element{
+        display: flex;
+        flex-flow: column wrap;
+
+        padding: 10px;
+
+        h3{
+            font-size: 28px;
+        }
+
+        span{
+            font-size: 20px;
+            font-variant: small-caps;
         }
     }
 }

@@ -1,0 +1,41 @@
+footer{
+    color: white;
+
+    table{
+        width: 100%;
+        border: .1px solid white;
+        border-collapse: collapse;
+
+        margin: 0 auto;
+
+        td, th{
+            padding: 5px;
+            backdrop-filter: blur(2px);
+        }
+
+        thead{
+            background-color: rgba($color: gray, $alpha: .5);
+        }
+
+        tbody{
+            tr{
+                text-align: center;
+                td{
+                    h5{
+                        font-size: 20px;
+                    }
+                    img{
+                        max-width: 50px;
+
+                        transition: ease-in-out .3s;
+                        &:hover{
+                            transition: ease-in-out .3s;
+                            transform: scale(1.3);
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

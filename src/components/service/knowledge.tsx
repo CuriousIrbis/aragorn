@@ -11,7 +11,7 @@ export default function Knowledge(props: any){
     })
     return (
         <section className='knowledge-section'>
-            <div className='knwowledge-list'>
+            <div className='knowledge-list'>
                 {interests}
             </div>
         </section>

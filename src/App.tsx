@@ -5,6 +5,7 @@ import Home from "./pages/home";
 import Interests from "./pages/interests";
 
 import NotFound from './pages/notFound'
+import Projects from "./pages/projects";
 
 export default function App(){
   return (
@@ -12,6 +13,7 @@ export default function App(){
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
         <Route path="interests" element={<Interests />} />
+        <Route path="projects" element={<Projects />}/>
       </Route>
       <Route path="*" element={< NotFound/>}/>
     </Routes>
