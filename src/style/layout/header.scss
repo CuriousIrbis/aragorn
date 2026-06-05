@@ -59,10 +59,11 @@ header{
     }
 }
 
-@media screen and (max-width: 470px){
+@media screen and (width < 400px){
     header{
+        padding: 5px auto;
         img{
-            max-width: 80px;
+            display: none;
         }
 
         nav{

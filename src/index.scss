@@ -23,3 +23,9 @@ body{
   background-attachment: fixed;
   background-position: center center;
 }
+
+@media screen and (width < 400px) {
+  body{
+    background-image: url('/src/assets/img/webp/orange-mountains(mobile).webp');
+  }
+}

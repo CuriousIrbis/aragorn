@@ -57,3 +57,11 @@
         }
     }
 }
+
+@media screen and (width < 400px){
+    .home{
+        .welcome-title{
+            flex-direction: column;
+        }
+    }
+}
