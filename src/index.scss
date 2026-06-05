@@ -1,10 +1,15 @@
 @font-face {
-  font-family: 'Alumatica';
+  font-family: 'Hemico';
   src: url('/src/assets/fonts/HemicoGreekRegular.ttf');
 }
 
+@font-face{
+  font-family: 'Razer';
+  src: url('/src/assets/fonts/Razer/dehinted-RazerF5-Regular.ttf');
+}
+
 :root{
-  font-family: 'Alumatica';
+  font-family: 'Hemico';
   font-weight: lighter;
 }
 

@@ -41,9 +41,11 @@ header{
 
             border-radius: 10px 20px;
 
-            padding: 23px;
+            padding: 20px;
 
             transition: ease-in-out .6s;
+
+            border-inline: 3px solid transparent;
 
             &:hover{
                 background-color: rgba($color: gray, $alpha: .2);

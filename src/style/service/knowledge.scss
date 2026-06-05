@@ -4,24 +4,17 @@
 
     gap: 50px;
     
-    color: white;
-
-    background-color: rgba($color: gray, $alpha: .2);
-    backdrop-filter: blur(2px);
-
     .knowledge-element{
         display: flex;
         flex-flow: column wrap;
 
-        padding: 10px;
-
         h3{
-            font-size: 28px;
+            font-size: 20px;
         }
 
         span{
             font-size: 20px;
-            font-variant: small-caps;
+            font-family: 'Razer';
         }
     }
 }

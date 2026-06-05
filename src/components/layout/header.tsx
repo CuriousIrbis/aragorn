@@ -9,7 +9,6 @@ function Header(){
             <img src={Icon} alt="" />
             <nav>
                 <Link to='/' state={{title: 'дом'}}>Домой</Link>
-                <Link to='/interests' state={{title: 'интересы'}}>Интересы</Link>
                 <Link to='/projects' state={{title: 'проекты'}}>Проекты</Link>
             </nav>
         </header>
