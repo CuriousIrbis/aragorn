@@ -24,7 +24,7 @@ body{
   background-position: center center;
 }
 
-@media screen and (width < 400px) {
+@media screen and (max-width: 768px) {
   body{
     background-image: url('/src/assets/img/webp/orange-mountains(mobile).webp');
   }

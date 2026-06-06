@@ -59,7 +59,7 @@ header{
     }
 }
 
-@media screen and (width < 400px){
+@media screen and (max-width: 768px){
     header{
         padding: 5px auto;
         img{
