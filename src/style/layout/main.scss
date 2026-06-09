@@ -1,6 +1,7 @@
 .main-container{
     display: flex;
     flex-direction: column;
+    flex: 1 0 auto;
 
     main{
         align-self: center;
@@ -14,6 +15,5 @@
     footer{
         align-self: center;
         width: 100%;
-        // max-width: 80%;
     }
 }

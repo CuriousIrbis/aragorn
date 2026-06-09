@@ -67,8 +67,17 @@ header{
         }
 
         nav{
+            flex-flow: row wrap;
             a{
                 font-size: 24px;
+
+                &:active{
+                    background-color: rgba($color: gray, $alpha: .2);
+                    text-shadow: 3px 3px 30px rgba(245, 245, 245, 0.56);
+                    border-inline: 3px solid white;
+                    transition: ease-in-out .6s;
+                    border-radius: 10px 60px;
+                }
             }
         }
     }

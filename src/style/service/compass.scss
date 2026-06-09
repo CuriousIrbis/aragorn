@@ -1,0 +1,45 @@
+.compass-container{
+    margin: 0 auto;
+
+    .closed-data{
+        display: block;
+        
+        width: 100%;
+        min-height: 170px;
+
+        border: 1px solid transparent;
+        padding: 30px;
+
+        transition: ease-in-out .5s;
+    }
+
+    .opened-data{
+        display: block;
+
+        width: 100%;
+        min-height: 170px;
+
+        background-color: rgba($color: grey, $alpha: .4);
+        border: 1px solid white;
+        backdrop-filter: blur(2px);
+
+        padding: 30px;
+
+        border-radius: 20px 20px;
+
+        transition: ease-in-out .5s;
+    }
+
+
+    .compass{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        .clasters{
+            border: 3px solid white;
+            padding-inline: 20px;
+            border-radius: 70% 20% 20% 70%;
+        }
+    }
+}
