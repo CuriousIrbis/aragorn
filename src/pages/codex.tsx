@@ -43,7 +43,11 @@ export default function codex(){
     return (
         <section className="mountain-codex">
             <h2>Четыре столпа Кодекса⚖️</h2>
-            <p>
+            <p style={{
+                fontWeight: "bold",
+                fontSize: "24px", 
+                textShadow: "3px 3px 10px orangered"
+            }}>
                 Кодекс - это устав, который гласит <i>как</i> я работаю.
             </p>
             <section className="pillar-section">

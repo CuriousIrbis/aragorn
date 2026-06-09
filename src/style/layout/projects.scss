@@ -1,0 +1,14 @@
+.projects-container{
+    p{
+        font-size: 28px;
+        font-weight: bold;
+        text-shadow: 3px 4px 20px rgb(255, 140, 0);
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+
+        gap: 50px;
+    }
+}
