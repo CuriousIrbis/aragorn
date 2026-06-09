@@ -2,7 +2,6 @@ import { useLocation } from 'react-router';
 import '/src/style/layout/home.scss'
 
 import photoOfMe from '../assets/img/jpg/tg1.jpeg'
-import Header from '../components/layout/header';
 
 export default function Home(){
     const location = useLocation();

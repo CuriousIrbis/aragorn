@@ -26,7 +26,7 @@ const usedTechs = technologies.map((tech: string) => {
 export default function About(){
     return (
         <section className='about-section'>
-            <h2>Библиотека хранителя</h2>
+            <h2>Развертка хранителя</h2>
             <section className='about-card'>
                 <h3>Моя роль🧳</h3>
                 <p>
