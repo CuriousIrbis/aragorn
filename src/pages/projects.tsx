@@ -8,47 +8,8 @@ interface Tech{
     description: string
 }
 
-const teaTech: Tech[] = [
-    {
-        title: 'React',
-        description: 'Весь проект построен на технологии React и JSX'
-    },
-    {
-        title: 'React Router',
-        description: 'React Router применялся для создания и обработки страниц новостей, чаев и т.п.'
-    },
-    {
-        title: 'SCSS',
-        description: 'Данная технология применялась для упрощения написания кода на CSS'
-    },
-    {
-        title: 'React-hot-Toast',
-        description: 'Эта технология применялась для упрощения редактирования выскакивающих окон'
-    },
-    {
-        title: "Vite",
-        description: "Использовался для упрощения создания приложения"
-    }
-]
-
-const aragornTech: Tech[] = [
-    {
-        title: "React",
-        description: "Используется как основной фреймворк для работы"
-    },
-    {
-        title: "React Router",
-        description: "Используется для навигации между страницами"
-    },
-    {
-        title: "Axios",
-        description: "Используется для асинхронного доступа по API"
-    },
-    {
-        title: "SCSS",
-        description: "Используется для упрощения редактирования файлов CSS"
-    }
-]
+const teaTech: Tech[] = techs[0]
+const aragornTech: Tech[] = techs[1]
 
 export default function Projects(){
     return (

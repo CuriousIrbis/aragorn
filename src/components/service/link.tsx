@@ -25,11 +25,10 @@ export default function CustomLink({link, title, techs, children}: Custom){
     
     return (
         <div className="custom-link">
-            <section className="">
+            <section>
                 <Link to={link}>{title}</Link>
                 <p itemProp="description">{children}</p>
             </section>
-            
             <section>
                 <p>В данном приложении использовались такие технологии, как:</p>
                 <ul>{techMap}</ul>
