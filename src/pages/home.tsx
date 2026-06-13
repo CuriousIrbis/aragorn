@@ -3,14 +3,15 @@ import '/src/style/layout/home.scss'
 
 import photoOfMe from '../assets/img/jpg/tg1.jpeg'
 
+
 export default function Home(){
     const location = useLocation();
     const {title} = location.state || {};
 
-
     return(
         <section className="home">
             <h1>{title}</h1>
+            
             <section className='welcome-title'>
                 <article className='welcome-text'>
                     <h3>Кто я?</h3>

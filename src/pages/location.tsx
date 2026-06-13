@@ -57,7 +57,10 @@ export default function GeoLocation(){
                     </Popup>
                 </Marker>
                 {userCoord && (
-                    <Marker position={[userCoord.lat, userCoord.lng]}>
+                    <Marker 
+                        position={[userCoord.lat, userCoord.lng]}
+                        
+                    >
                         <Popup>
                             Твоя текущая позиция
                         </Popup>
