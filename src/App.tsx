@@ -11,7 +11,15 @@ import GeoLocation from './pages/location';
 import Login from './pages/login';
 import { createContext, useState } from "react";
 
-export const UserContext = createContext('')
+interface ContextUser{
+  userName: string
+  setUsername: React.Dispatch<React.SetStateAction<string>>
+}
+
+export const UserContext = createContext<ContextUser>({
+  userName: '',
+  setUsername: () => {}
+})
 localStorage.setItem('login', 'false')
 
 export default function App(){

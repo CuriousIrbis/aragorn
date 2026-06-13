@@ -4,12 +4,17 @@ import {  useNavigate } from "react-router";
 
 import '../style/layout/login.scss';
 
+interface ContextUser{
+    userName: string
+    setUsername: React.Dispatch<React.SetStateAction<string>>
+}
+
 export default function Login(){
-    const { userName, setUsername } = useContext<string>(UserContext)
+    const { userName, setUsername } = useContext<ContextUser>(UserContext)
     const [inputValue, setInputValue] = useState('')
     const navigate = useNavigate()
 
-    async function handleRedirect(ev: SubmitEvent){
+    async function handleRedirect(ev: any){
         ev.preventDefault()
 
         try{
@@ -30,7 +35,7 @@ export default function Login(){
 
     return (
         <div className="login-container">
-            <form onSubmit={(ev: SubmitEvent) => handleRedirect(ev)}>
+            <form onSubmit={(ev) => handleRedirect(ev)}>
                 <label htmlFor="username">Имя: </label>
                 <input 
                     type="text"
