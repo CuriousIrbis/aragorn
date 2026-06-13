@@ -9,27 +9,31 @@ import About from "./pages/about";
 import Codex from "./pages/codex";
 import GeoLocation from './pages/location';
 import Login from './pages/login';
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
+import TestPage from "./pages/newPage";
 
 interface ContextUser{
   userName: string
   setUsername: React.Dispatch<React.SetStateAction<string>>
 }
 
-export const UserContext = createContext<ContextUser>({
+const UserContext = createContext<ContextUser>({
   userName: '',
   setUsername: () => {}
 })
-localStorage.setItem('login', 'false')
 
 export default function App(){
-
   const [userName, setUsername] = useState('')
+
+  useEffect(() => {
+    localStorage.setItem('login', 'false')
+  }, [])
 
   return (
     <UserContext value={{userName, setUsername}}>
       <Routes>
         <Route path="login" element={<Login />}/>
+        <Route path="secret" element={<TestPage />}/>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
           <Route path="projects" element={<Projects />}/>
@@ -42,3 +46,5 @@ export default function App(){
     </UserContext>
   )
 }
+
+export {UserContext}
