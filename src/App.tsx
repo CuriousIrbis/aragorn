@@ -1,25 +1,36 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import Layout from "./Layout";
 import links from "./constants/Links";
 import type ILink from "./types/TLinks";
+import Header from "./components/Header";
+import { AnimatePresence } from "framer-motion";
 
 export default function App(){
-  return(
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        {links.map((link: ILink, index: number) => {
-          const Component = link.pageLink;
+  const location = useLocation();
 
-          return (
-            <Route 
-              key={index}
-              path={link.address}
-              element={<Component />}
-            />
-          )
-        })}
-      </Route>
-    </Routes>
+  return(
+    <div>
+      <Header />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Layout />}>
+            {links.map((link: ILink, index: number) => {
+              const Component = link.pageLink;
+
+              return (
+                <Route 
+                  key={index}
+                  path={link.address}
+                  element={<Component />}
+                />
+              )
+            })}
+          </Route>
+        </Routes>
+      </AnimatePresence>
+      
+    </div>
+
   )
 }

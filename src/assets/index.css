@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/JetBrainsMono.ttf');
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('./fonts/BarlowCondensed-Medium.otf');
+}
+
+body{
+    background-color: #2C1A08;
+
+    padding: 0;
+    margin: 0;
+
+    color: #F0E6CC;
+
+    opacity: 0;
+    animation: fadeInPageAnimation 1s ease-in-out forwards;
+}
+
+@keyframes fadeInPageAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1; /* В конце страница становится полностью видимой */
+  }
+}
+
+a{
+    transition: ease-in-out .3s;
+    text-decoration: none;
+}

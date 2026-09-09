@@ -1,20 +1,26 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import type ILink from '../types/TLinks';
 import links from '../constants/Links';
 
-// import styles from '../styles/header.component.scss';
+import styles from '../styles/header.module.scss';
 
 export default function Header(){
     return (
         <header>
-            <Link to='/'>Aragorn</Link>
+            <NavLink to='/' className={styles.homeLink}>Aragorn</NavLink>
 
             <nav>
                 {links.map((link: ILink, index: number) => (
-                    <Link to={link.address} key={index}>
+                    <NavLink 
+                        to={link.address} 
+                        key={index}
+                        className={({isActive}) => 
+                            isActive ? `${styles.headerLink} ${styles.active}` : styles.headerLink
+                        }
+                    >
                         {link.name}
-                    </Link>
+                    </NavLink>
                 ))}
             </nav>
         </header>
