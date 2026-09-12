@@ -5,6 +5,7 @@ import links from "./constants/Links";
 import type ILink from "./types/TLinks";
 import Header from "./components/Header";
 import { AnimatePresence } from "framer-motion";
+import Footer from "./components/Footer";
 
 export default function App(){
   const location = useLocation();
@@ -29,7 +30,7 @@ export default function App(){
           </Route>
         </Routes>
       </AnimatePresence>
-      
+      <Footer />
     </div>
 
   )

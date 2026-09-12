@@ -3,21 +3,19 @@ import { NavLink } from 'react-router-dom';
 import type ILink from '../types/TLinks';
 import links from '../constants/Links';
 
-import styles from '../styles/header.module.scss';
+// import styles from '../styles/header.module.scss';
 
 export default function Header(){
     return (
-        <header>
-            <NavLink to='/' className={styles.homeLink}>Aragorn</NavLink>
+        <header className='bg-bg-main flex items-center justify-between py-5 px-17.5'>
+            <NavLink to='/' className='text-[22px] font-bold font-barlow hover:text-orange'>Aragorn</NavLink>
 
-            <nav>
+            <nav className='flex flex-row gap-7.5'>
                 {links.map((link: ILink, index: number) => (
                     <NavLink 
                         to={link.address} 
                         key={index}
-                        className={({isActive}) => 
-                            isActive ? `${styles.headerLink} ${styles.active}` : styles.headerLink
-                        }
+                        className='text-dark-hacki hover:text-beige [.active]:text-orange'
                     >
                         {link.name}
                     </NavLink>

@@ -1,3 +1,5 @@
+@import 'tailwindcss';
+
 @font-face {
     font-family: 'JetBrains Mono';
     src: url('./fonts/JetBrainsMono.ttf');
@@ -8,8 +10,37 @@
     src: url('./fonts/BarlowCondensed-Medium.otf');
 }
 
+:root, .light-theme{
+  --bg-main: #2C1A08;
+  --bg-browney: #3a2410;
+
+  --text-beige: #F0E6CC;
+  --text-dark-hacki: #7A6A50;
+  --text-hacki: #b8a880;
+
+  --text-orange: #E8620A;
+  --text-green: #0E7A4E;
+
+}
+
+@theme {
+  --color-bg-main: var(--bg-main);
+  --color-bg-browney: var(--bg-browney);
+
+  --color-beige: var(--text-beige);
+  --color-dark-hacki: var(--text-dark-hacki);
+  --color-hacki: var(--text-hacki);
+  
+  --color-orange: var(--text-orange);
+  --color-green: var(--text-green);
+
+  --font-jetbrains: 'JetBrains Mono', sans-serif;
+  --font-barlow: 'Barlow', sans-serif;
+}
+
+
 body{
-    background-color: #2C1A08;
+    background-color: var(--bg-main);
 
     padding: 0;
     margin: 0;
@@ -30,6 +61,6 @@ body{
 }
 
 a{
-    transition: ease-in-out .3s;
-    text-decoration: none;
+  transition: ease-in-out .3s;
+  text-decoration: none;
 }

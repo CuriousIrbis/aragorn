@@ -9,22 +9,26 @@ const links: Array<ILink> = [
     {
         address: '/',
         name: 'HOME',
-        pageLink: HOME
+        pageLink: HOME,
+        description: ''
     },
     {
         address: '/interests',
         name: 'ИНТЕРЕСЫ',
-        pageLink: INTERESTS
+        pageLink: INTERESTS,
+        description: 'Чем я занимаюсь вне работы'
     },
     {
         address: '/projects',
         name: 'ПРОЕКТЫ',
-        pageLink: PROJECTS
+        pageLink: PROJECTS,
+        description: 'Пет-проекты и учебные работы'
     },
     {
         address: '/contacts',
         name: 'КОНТАКТЫ',
-        pageLink: CONTACTS
+        pageLink: CONTACTS,
+        description: 'Давайте поговорим'
     }
 ]
 
