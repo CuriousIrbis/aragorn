@@ -5,7 +5,7 @@ import Info, { LinkInfo } from './Info';
 
 export default function Maininfo(){
     return (
-        <section className='flex flex-row justify-between pl-17.5 font-jetbrains'>
+        <section className='flex flex-row justify-between px-17.5 font-jetbrains'>
             <section className='flex flex-col gap-12 w-full pt-20'>
                 <section className='flex flex-row justify-between pr-12'>
                     <div className='text-dark-hacki flex flex-row gap-5 items-center'>
@@ -43,7 +43,7 @@ export default function Maininfo(){
                     />
                 </section>
             </section>
-            <section className='bg-[#3a2410] border-x border-dark-hacki flex'>
+            <section className='bg-[#3a2410] border-x-[.3px] border-dark-hacki flex'>
                 <img src={photo} alt="" className='w-120 px-10 py-30 self-center' />
             </section>
         </section>

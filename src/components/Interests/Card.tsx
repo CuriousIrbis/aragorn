@@ -14,8 +14,8 @@ export default function Card({position, title, description, additional, link, ha
             <h3>{title}</h3>
             <p className="text-dark-hacki group-hover:text-hacki duration-400">{description}</p>
             {isOpened && (
-                <div className="flex flex-col gap-5">
-                    <hr />
+                <div className="flex flex-col gap-5 text-orange font-jetbrains text-[12px]">
+                    <hr className="text-dark-hacki " />
                     {link ? (
                         <a href={link}>Ссылка: {additional}</a>
                     ) : (
