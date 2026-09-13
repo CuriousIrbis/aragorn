@@ -12,6 +12,7 @@ export default function Layout(){
                 duration: .2,
                 ease: 'easeInOut'
             }}
+            className="pt-18"
         >
             <Outlet />
         </motion.div>
