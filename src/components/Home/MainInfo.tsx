@@ -43,8 +43,8 @@ export default function Maininfo(){
                     />
                 </section>
             </section>
-            <section className='bg-[#3a2410] border-x border-dark-hacki'>
-                <img src={photo} alt="" className='w-180 px-10 py-20' />
+            <section className='bg-[#3a2410] border-x border-dark-hacki flex'>
+                <img src={photo} alt="" className='w-120 px-10 py-30 self-center' />
             </section>
         </section>
     )
