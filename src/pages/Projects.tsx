@@ -6,7 +6,6 @@ import type IProject from "../types/TProject";
 
 const position2 = data[1];
 
-
 export default function Projects(){
     return (
         <div>
