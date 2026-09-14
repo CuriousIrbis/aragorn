@@ -1,0 +1,80 @@
+[
+    {
+        "title": "Aragorn",
+        "type": "Pet project",
+        "status": "In dev",
+        "description": "Личный сайт-портфолио. Данный сайт предоставляет информацию обо мне.",
+        "profits": [
+            "Позволяет поподробнее узнать обо мне",
+            "Позволяет ознакомиться с моими работами",
+            "Позволяет связаться со мной для сотрудничества"
+        ],
+        "techs": [
+            "TypeScript",
+            "React",
+            "React Router",
+            "React hot Toast",
+            "Vite",
+            "Zustand",
+            "TailwindCSS",
+            "Framer Motion"
+        ],
+        "year": 2026,
+        "links": {
+            "GitHub": "https://github.com/CuriousIrbis/aragorn",
+            "Vercel": "https://aragorn-one.vercel.app"
+        }
+    },
+    {
+        "title": "Citron-corp",
+        "type": "Practical work",
+        "status": "Live",
+        "description": "Программное обеспечение, web-страница, которая подразумевает собой управление персоналом",
+        "profits": [
+            "Позволяет просматривать сотрудников",
+            "Позволяет добавлять сотрудников",
+            "Позволяет увольнять сотрудников"
+        ],
+        "techs": [
+            "TypeScript",
+            "React",
+            "React Router",
+            "Axios",
+            "SCSS",
+            "Vite",
+            "Prisma",
+            "cors",
+            "Express.js"
+        ],
+        "year": 2026,
+        "links": {
+            "GitHub": "https://github.com/CuriousIrbis/citron-corp",
+            "Vercel": "https://citron-corp.vercel.app"
+        }
+    },
+    {
+        "title": "dailyTea",
+        "type": "Pet project",
+        "status": "Live",
+        "description": "Данный проект представляет собой переработанный вариант меню чайных ресторанов, сделанный на современный лад.",
+        "profits": [
+            "Упрощает работу между официантом и пользователем",
+            "Избавляет мир от необходимости в вырубке деревьев",
+            "Повышает прибыльность для компаний"
+        ],
+        "techs": [
+            "TypeScript",
+            "React",
+            "React Router",
+            "Zustand",
+            "React hot Toast",
+            "SCSS",
+            "Vite"
+        ],
+        "year": 2025,
+        "links": {
+            "GitHub": "https://github.com/The-last-Witcher/dailyTea",
+            "Vercel": "https://daily-tea.vercel.app"
+        }
+    }
+]
